@@ -4,9 +4,6 @@ var prefix = "-";
 
 
 
-client.login('NDIzOTUwNDQyMjQyODk5OTc5.Dz3qyQ.T_Wh2hzY8uLF9-cYb5NvvF6bqcE'); 
-
-
 
 client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
