@@ -15,12 +15,6 @@ client.on('ready',  () => {
 client.user.setStatus("dnd");
 });
 
-// playing
-client.on('ready', () => {                           
-client.user.setGame(`-inv`,'https://www.twitch.tv/tarikrs');                                                                                                                                                                                                                                                                                                                                                                                                                             client.user.setGame(`-help | On 20 Servers`,'https://www.twitch.tv/v5bz');
-});          
-
-
 
 
 
@@ -36,7 +30,6 @@ message.author.send("**اوامر البوت**" + `  **
 -credit mention money للتحويل
 -say تكرر الكلام
 -bc ارسال البرودكسات
--invite لكي تضيف البوت
 **`);
     }
 }); 
@@ -187,7 +180,7 @@ client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('-n')){
-if(!message.author.id === 'اي دي صاحب البوت') return;
+if(!message.author.id === '409045670943784974') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -196,49 +189,13 @@ m.sendMessage(args)
 });
 
 
- client.on('message',message => {
-
-  if (true) {
-
-if (message.content === '-invite') {
-
-      message.author.send('  رابط بوتك https://discordapp.com/oauth2/authorize?client_id=423950442242899979&permissions=8&scope=bot     ').catch(e =>console.log(e.stack));
-
- 
-
     }
 
    }
 
   });
 
- 
-
- 
-
-client.on('message', message => {
-
-     if (message.content === "-invite") {
-
-     let embed = new Discord.RichEmbed()
-
-  .setAuthor(message.author.username)
-
-  .setColor("#9B59B6")
-
-  .addField(" Done | تــــم" , " |  تــــم ارســالك في الخــاص")
-
-     
-
-     
-
-     
-
-  message.channel.sendEmbed(embed);
-
-    }
-
-});
+    
 
 const devs = ["409045670943784974"];
 const adminprefix = ["-"];
